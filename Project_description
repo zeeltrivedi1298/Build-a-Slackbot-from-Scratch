@@ -1,0 +1,24 @@
+Project Description
+About Project features: 
+
+Accepts date input in the format of "DD-MM-YYYY".
+Calculates the user's age based on the current date.
+Responds to the user with their age and any other relevant information.
+Uses the Slack API to communicate with the Slack platform.
+Well-documented code that follows best practices for maintainability and scalability.
+Easy to use, fast, and reliable.
+Perfect for anyone who needs to quickly calculate their age without leaving the Slack workspace.
+
+Use the code editor to write your code to finish this task
+
+To finish the project for the AgeBot, you'll need to follow these steps:
+
+update the values for SLACK_AUTH_TOKEN and SLACK_APP_TOKEN in the project. 
+
+Import the necessary Slack-related packages into your project using the import statement. You can use the Slack SDK for Go (https://github.com/slack-go/slack) or Java to interact with the Slack API.
+
+Integrate your project with Slack by initializing a new Slack API client using your Bot User OAuth Access Token and App-Level Token. You can use the New function provided by the Slack SDK to create a new instance of the Client struct.
+
+Write the logic for calculating the age based on the provided date input. You can use the time package to perform the necessary date calculations. First, parse the input date using the time. Parse function and then calculate the duration between the input date and the current date using the time. Since function. Finally, convert the duration to years and return the age as an integer.
+
+Write a function that listens for incoming messages from Slack using the Client.AddMessageEvents function provided by the Slack SDK. When a message is received, parse the input date and calculate the age using the logic written in step 6. Then, use the Client.PostMessage function to send a response back to the user with their calculated age.
